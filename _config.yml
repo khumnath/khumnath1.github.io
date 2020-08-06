@@ -57,9 +57,9 @@ navs:
     href: /categories/
     label: categories
 
-#   -
-#     href: /archives/
-#     label: archives
+  -
+      href: /archives/
+      label: archives
 
 #   -
 #     href: /open-source/
