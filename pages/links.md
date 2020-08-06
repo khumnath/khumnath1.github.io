@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Links
-description: 没有链接的博客是孤独的
-keywords: 友情链接
+description: links
+keywords: links
 comments: true
-menu: 链接
+menu: links
 permalink: /links/
 ---
 
@@ -18,7 +18,7 @@ permalink: /links/
 {% endfor %}
 </ul>
 
-> 友情链接
+> links
 
 <ul>
 {% for link in site.data.links %}
