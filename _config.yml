@@ -4,7 +4,7 @@
 baseurl:
 url: https://khumnath.github.io
 date_format: "ordinal"
-title: khumnath.github.io
+title: "khumnath.github.io"
 subtitle: "git playground of khumnath"
 description: "a jekyll based github blog template"
 keywords: khumnath, blog, github blog, jekyll
