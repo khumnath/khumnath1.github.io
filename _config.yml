@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://khumnath.github.io
+url: "https://khumnath.github.io"
 date_format: "ordinal"
 title: "khumnath.github.io"
 subtitle: "git playground of khumnath"
