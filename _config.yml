@@ -1,0 +1,154 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: https://khumnath.github.io
+date_format: "ordinal"
+title: khumnath.github.io
+subtitle: "git playground of khumnath"
+description: "a jekyll based github blog template"
+keywords: khumnath, blog, github blog, jekyll
+timezone: Asia/Kathmandu
+encoding: "utf-8"
+side_bar_repo_limit: 5
+repository: khumnath/khumnath.github.io
+# Cdn acceleration configuration for css and js resources
+cdn:
+    jsdelivr:
+        enabled: true
+# component
+components:
+    # on/off
+    share:
+        enabled: true
+    # visit count
+    busuanzi:
+        enabled: true
+        start_date: 2020-08-03
+# compress content
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+# word count
+word_count:
+    enabled: true
+# theme https://github.com/mzlogin/rouge-themes
+highlight_theme: github
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: khumnath #orginal:Zhuang Ma
+organization: 
+organization_url: 
+github_username: khumnath
+location: syangja, nepal
+email: 
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: home
+
+  -
+    href: /categories/
+    label: categories
+
+#   -
+#     href: /archives/
+#     label: archives
+
+#   -
+#     href: /open-source/
+#     label: opensource
+
+  -
+    href: /wiki/
+    label: wiki
+
+  -
+    href: /links/
+    label: links
+
+  -
+    href: /about/
+    label: about
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 10
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+plugins:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: 
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: mzlogin
+    repo: blog-comments
+    oauth:
+        client_id: d2e1cbbd298958076462
+        client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: mzlogin
+    repo: blog-comments
+    clientID: d2e1cbbd298958076462
+    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+# When using other comment components, you can click to display Disqus
+lazy_load_disqus : false
+
+# ---------------- #
+#      Search      #
+# ---------------- #
+simple_jekyll_search:
+    #Whether to support full-text search
+    fulltext: false
+    # How many search results are displayed at most
+    limit: 15
+
+# ---------------- #
+#      Google      #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1
+    adsense:
+        footer: true
+        sidebar: true 
+        content_header: true
+        content_footer: false
