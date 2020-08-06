@@ -119,17 +119,18 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: mzlogin
+    owner: 
     repo: blog-comments
     oauth:
         client_id: d2e1cbbd298958076462
         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # https://github.com/gitalk/gitalk#install
 gitalk:
-    owner: mzlogin
-    repo: blog-comments
-    clientID: d2e1cbbd298958076462
-    clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+    owner: khumnath
+    repo: blog-gittalk
+    clientID: 46a3298496ced4995359
+    clientSecret: 21c7ecc6a43ce06518c52d41d0c18cad09f7a1fd
+    b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # When using other comment components, you can click to display Disqus
 lazy_load_disqus : false
 
