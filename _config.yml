@@ -49,9 +49,9 @@ email:
 #    Navigation    #
 # ---------------- #
 navs:
-  -
-    href: /
-    label: home
+ # -
+#    href: /
+#    label: home
 
   -
     href: /categories/
