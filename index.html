@@ -101,6 +101,24 @@ comments: false
             </ol>
         </div>
         <div class="column one-third">
+            <script type="text/javascript">
+        function clock(){
+moment.locale('ne')            
+var time = new Date();
+           
+            var nhour =  moment().tz("Asia/Kathmandu").format('hh');
+            var nmin = moment().tz('Asia/Kathmandu').format('mm')
+            var nsec = moment().tz('Asia/Kathmandu').format('ss') 
+            var nampm = moment().tz('Asia/Kathmandu').format('A')
+            
+            var currentTime = document.getElementById('clock');
+currentTime.innerHTML = "<span id='nhour'>"+nhour+"</span><span class='nmin'>:</span><span id='min'>"+nmin+"</span><span class='nsec'>:</span><span id='sec'>"+nsec+"</span><span id='nampm'> "+nampm+"</span>"
+            setTimeout('clock()',1000); 
+        }    
+        clock();    
+    </script>
+            <span id="DATE_IN_NEPALI"></span>
+                <span id="clock"></span>
             {% include sidebar-search.html %}
             {% include sidebar-categories-cloud.html %}
             {% include sidebar-ad.html %}
@@ -137,22 +155,8 @@ comments: false
         {% endif %}
         </div>
     </div>
-        <script>
-function clock(){
-moment.locale('ne')            
-var time = new Date();
-           
-            var nhour =  moment().tz("Asia/Kathmandu").format('hh');
-            var nmin = moment().tz('Asia/Kathmandu').format('mm')
-            var nsec = moment().tz('Asia/Kathmandu').format('ss') 
-            var nampm = moment().tz('Asia/Kathmandu').format('A')
-            
-            var currentTime = document.getElementById('clock');
-currentTime.innerHTML = "<span id='nhour'>"+nhour+"</span><span class='nmin'>:</span><span id='min'>"+nmin+"</span><span class='nsec'>:</span><span id='sec'>"+nsec+"</span><span id='nampm'> "+nampm+"</span>"
-            setTimeout('clock()',1000); 
-        }    
-        clock(); 
-</script>
+        
+
     <!-- /pagination -->
 </section>
 <!-- /section.content -->
