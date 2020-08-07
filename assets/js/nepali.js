@@ -150,51 +150,51 @@ function getNepaliMonthInString(month) {
 
     switch (month) {
         case 1:
-            nepaliMonth = "बैशाख";
+            nepaliMonth = "рдмреИрд╢рд╛рдЦ";
             break;
 
         case 2:
-            nepaliMonth = "जेष्ठ";
+            nepaliMonth = "рдЬреЗрд╖реНрда";
             break;
 
         case 3:
-            nepaliMonth = "असार";
+            nepaliMonth = "рдЕрд╕рд╛рд░";
             break;
 
         case 4:
-            nepaliMonth = "श्रावन";
+            nepaliMonth = "рд╢реНрд░рд╛рд╡рди";
             break;
 
         case 5:
-            nepaliMonth = "भाद्र";
+            nepaliMonth = "рднрд╛рджреНрд░";
             break;
 
         case 6:
-            nepaliMonth = "असोज";
+            nepaliMonth = "рдЕрд╕реЛрдЬ";
             break;
 
         case 7:
-            nepaliMonth = "कार्तिक";
+            nepaliMonth = "рдХрд╛рд░реНрддрд┐рдХ";
             break;
 
         case 8:
-            nepaliMonth = "मंग्सिर";
+            nepaliMonth = "рдордВрдЧреНрд╕рд┐рд░";
             break;
 
         case 9:
-            nepaliMonth = "पौष";
+            nepaliMonth = "рдкреМрд╖";
             break;
 
         case 10:
-            nepaliMonth = "माघ";
+            nepaliMonth = "рдорд╛рдШ";
             break;
 
         case 11:
-            nepaliMonth = "फाल्गुन";
+            nepaliMonth = "рдлрд╛рд▓реНрдЧреБрди";
             break;
 
         case 12:
-            nepaliMonth = "चैत्र";
+            nepaliMonth = "рдЪреИрддреНрд░";
             break;
     }
     return nepaliMonth;
@@ -258,31 +258,31 @@ function getEnglishMonth(month) {
 function getNepaliDayOfWeekInString(day) {
     switch (day) {
         case 1:
-            day = "आइतबार ";
+            day = "рдЖрдЗрддрдмрд╛рд░ ";
             break;
 
         case 2:
-            day = "सोमबार ";
+            day = "рд╕реЛрдордмрд╛рд░ ";
             break;
 
         case 3:
-            day = "मंगलबार ";
+            day = "рдордВрдЧрд▓рдмрд╛рд░ ";
             break;
 
         case 4:
-            day = "बुधबार ";
+            day = "рдмреБрдзрдмрд╛рд░ ";
             break;
 
         case 5:
-            day = "बिहिबार ";
+            day = "рдмрд┐рд╣рд┐рдмрд╛рд░ ";
             break;
 
         case 6:
-            day = "शुक्रबार ";
+            day = "рд╢реБрдХреНрд░рдмрд╛рд░ ";
             break;
 
         case 7:
-            day = "शनिबार ";
+            day = "рд╢рдирд┐рдмрд╛рд░ ";
             break;
     }
     return day;
@@ -435,34 +435,34 @@ function isNumeric(n) {
 function englishToNepaliNumber(number) {
     switch (number) {
         case "0":
-            number = "०";
+            number = "реж";
             break;
         case "1":
-            number = "१";
+            number = "рез";
             break;
         case "2":
-            number = "२";
+            number = "реи";
             break;
         case "3":
-            number = "३";
+            number = "рей";
             break;
         case "4":
-            number = "४";
+            number = "рек";
             break;
         case "5":
-            number = "५";
+            number = "рел";
             break;
         case "6":
-            number = "६";
+            number = "рем";
             break;
         case "7":
-            number = "७";
+            number = "рен";
             break;
         case "8":
-            number = "८";
+            number = "рео";
             break;
         case "9":
-            number = "९";
+            number = "реп";
             break;
     }
     return number;
