@@ -15,7 +15,7 @@ repository: khumnath/khumnath.github.io
 # Cdn acceleration configuration for css and js resources
 cdn:
     jsdelivr:
-        enabled: true
+        enabled: false
 # component
 components:
     # on/off
