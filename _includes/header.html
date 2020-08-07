@@ -86,7 +86,12 @@
     
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
     <body onload=updateClock();>
-    <script type="text/javascript">
+    
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="{{ site.url }}/" title="{{ site.title }}"><span class="octicon octicon-mark-github"></span> {{ site.title }}</a>
+             </h1>
+            <script type="text/javascript">
         function clock(){
 moment.locale('ne')            
 var time = new Date();
@@ -102,10 +107,7 @@ currentTime.innerHTML = "<span id='nhour'>"+nhour+"</span><span class='nmin'>:</
         }    
         clock();    
     </script>
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="{{ site.url }}/" title="{{ site.title }}"><span class="octicon octicon-mark-github"></span> {{ site.title }}</a>
-             </h1><span id="DATE_IN_NEPALI"></span>
+            <span id="DATE_IN_NEPALI"></span>
                 <span id="clock"></span>
             <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
               <span class="icon-bar"></span>
