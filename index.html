@@ -54,7 +54,7 @@ comments: false
               {% if post.topmost == true %}
               <li class="repo-list-item">
                 <h3 class="repo-list-name">
-                  <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[置顶]</span>{{ post.title }}</a>
+                  <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[ç½®é¡¶]</span>{{ post.title }}</a>
                 </h3>
                 <p class="repo-list-description">
                 {{ post.excerpt | strip_html | strip }}
@@ -101,8 +101,8 @@ comments: false
             </ol>
         </div>
         <div class="column one-third">
-            {% include date.html %}
             {% include sidebar-search.html %}
+            {% include date.html %}
             {% include sidebar-categories-cloud.html %}
             {% include sidebar-ad.html %}
             {% include sidebar-popular-repo.html %}
@@ -143,4 +143,3 @@ comments: false
     <!-- /pagination -->
 </section>
 <!-- /section.content -->
-
