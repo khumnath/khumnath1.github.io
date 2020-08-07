@@ -467,17 +467,3 @@ function englishToNepaliNumber(number) {
     }
     return number;
 }
-function clock(){
-moment.locale('ne')            
-var time = new Date();
-           
-            var nhour =  moment().tz("Asia/Kathmandu").format('hh');
-            var nmin = moment().tz('Asia/Kathmandu').format('mm')
-            var nsec = moment().tz('Asia/Kathmandu').format('ss') 
-            var nampm = moment().tz('Asia/Kathmandu').format('A')
-            
-            var currentTime = document.getElementById('clock');
-currentTime.innerHTML = "<span id='nhour'>"+nhour+"</span><span class='nmin'>:</span><span id='min'>"+nmin+"</span><span class='nsec'>:</span><span id='sec'>"+nsec+"</span><span id='nampm'> "+nampm+"</span>"
-            setTimeout('clock()',1000); 
-        }    
-        clock(); 
