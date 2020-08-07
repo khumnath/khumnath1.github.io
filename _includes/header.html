@@ -75,6 +75,22 @@
 <script src="{{ assets_base_url }}/assets/js/moment-with-locales.min.js"></script>
 <script src="{{ assets_base_url }}/assets/js/moment-timezone-with-data.js"></script>
 <script src="{{ assets_base_url }}/assets/js/miti.js"></script>
+    <script>
+        function clock(){
+moment.locale('ne')            
+var time = new Date();
+           
+            var nhour =  moment().tz("Asia/Kathmandu").format('hh');
+            var nmin = moment().tz('Asia/Kathmandu').format('mm')
+            var nsec = moment().tz('Asia/Kathmandu').format('ss') 
+            var nampm = moment().tz('Asia/Kathmandu').format('A')
+            
+            var currentTime = document.getElementById('clock');
+currentTime.innerHTML = "<span id='nhour'>"+nhour+"</span><span class='nmin'>:</span><span id='min'>"+nmin+"</span><span class='nsec'>:</span><span id='sec'>"+nsec+"</span><span id='nampm'> "+nampm+"</span>"
+            setTimeout('clock()',1000); 
+        }    
+        clock();    
+    </script>
 
     <script src="{{ assets_base_url }}/assets/vendor/jquery/dist/jquery.min.js"></script>
     <script src="{{ assets_base_url }}/assets/js/jquery-ui.js"></script>
