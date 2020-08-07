@@ -30,6 +30,7 @@ comments: false
                 <span class="meta-info">
                   <span class="octicon octicon-mark-github"></span>
                   <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
+                    {% include date.html %}
                 </span>
               </div>
             </div>
@@ -102,7 +103,7 @@ comments: false
         </div>
         <div class="column one-third">
             {% include sidebar-search.html %}
-            {% include date.html %}
+            
             {% include sidebar-categories-cloud.html %}
             {% include sidebar-ad.html %}
             {% include sidebar-popular-repo.html %}
