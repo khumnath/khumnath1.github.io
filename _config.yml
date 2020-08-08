@@ -22,9 +22,8 @@ components:
     share:
         enabled: true
     # visit count
-    busuanzi:
+    visitcount:
         enabled: true
-        start_date: 2020-08-03
 # compress content
 compress_html:
   clippings: all
